@@ -10,23 +10,25 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController
-@RequestMapping("/product") //Ruta de metodos para trabajar con los productos(CRUD)
+@RestController //Es una anotacion para indicar que la clase es un controlador (controlador: controla hacia donde manda los datos)
+@RequestMapping("/product") //Solicitud a la de
 public class ProductController {
 
-    @Autowired //Inyeccion de la clase de servicio
+    //Inyeccion de la clase de servicio
+    @Autowired
     private ProductService service;
 
     //-----------------------------------
-    @GetMapping("") /**Ruta del metodo*/
+
+    @GetMapping("") //Ruta del metodo @GetMapping
     public List<Product> listProduct(){   /**----Regresa una lista de products en formato JSON-------**/
         return service.fiadAll();
     }
 
-    @GetMapping("/{id}") /**Ruta del metodo*/
+    @GetMapping("/{id}")
     public ResponseEntity<Product> getProduct(@PathVariable Integer id){
         try {
-            Product product = service.get(id);                          /**Busca Un producto por id y lo retorna*/
+            Product product = service.get(id);/**Busca Un producto por id y lo retorna*/
             return new ResponseEntity<Product>(product,HttpStatus.OK);
         }catch (Exception e){
             return new ResponseEntity<Product>(HttpStatus.NOT_FOUND);
@@ -36,7 +38,6 @@ public class ProductController {
     @PostMapping("/save") /**Ruta del metodo*/
     public void saveProduct(@RequestBody Product product){ /**Guardar un nuevo producto en base de datos*/
         service.save(product);
-        
     }
 
     @DeleteMapping("/delete/{id}") /**Ruta del metodo*/
@@ -44,5 +45,4 @@ public class ProductController {
         service.delete(id);
         /**Elimina un producto en db por id*/
     }
-
 }

@@ -23,7 +23,6 @@ public class Model {
         this.id = id;
         this.name = name;
     }
-
     @Override
     public String toString() {
         return "Model{" +
