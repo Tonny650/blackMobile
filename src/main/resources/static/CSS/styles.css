@@ -1,0 +1,709 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body{
+    font-family: 'Assistant', sans-serif;
+}
+
+.header-container{
+    width: 100%;
+    padding: 10px;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+.advice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    background-color: #121212;
+    color: #fff;
+    font-size: 16.25px;
+}
+.header{
+    background-color: #fff;
+    padding: 12.5px;
+    font-size: 17.5px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1200px;
+}
+.header-navbar{
+    display: flex;
+    align-items: center;
+}
+
+.header-navbar img{
+    width: 120px;
+}
+
+.nav-bar{
+    margin-left: -180px;
+}
+
+.header .header-navbar ul{
+    margin-left: 200px;
+    display: flex;
+}
+
+.header .header-navbar li{
+    padding: 20px;
+}
+
+.header .header-navbar a{
+    text-decoration: none;
+    color: #000;
+}
+
+.case-section{
+    font-weight: bold;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+.case-section-line{
+    margin-bottom: 20px;
+    background-color: #000;
+    width: 100%;
+    height: 0.1px;
+}
+
+#interlined1{
+    text-decoration: underline;
+}
+#interlined2{
+    color: #555;
+}
+
+#interlined2:hover{
+    color: #000;
+}
+.products-container{
+    margin: 20px;
+}
+
+.title-products-section{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.max-width_producs-container{
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1200px;
+}
+
+.card{
+    margin: 5px;
+}
+.old-price{
+    font-size: 15px;
+    color: rgb(34, 34, 34);
+    text-decoration:line-through;
+}
+
+.products-section{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-around;
+}
+
+.products-section img{
+    cursor: pointer;
+    width: 250px;
+    transition: transform 0.1s;
+}
+
+.card:hover .img-container img:hover{
+    transform: scale(1.05);
+}
+.card-title{
+    font-size: 20px;
+    color: #000;
+}
+.card-price{
+    margin-top: 2px;
+}
+
+.wire-protection-section{
+    font-weight: bold;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+.wire-protection-section-line{
+    margin-bottom: 20px;
+    background-color: #000;
+    width: 100%;
+    height: 0.2px;
+}
+
+.footer{
+    position: relative;
+    bottom: 0;
+    background-color: #121212;
+    width: 100%;
+    height: 300px;
+}
+.max-width-footer{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.information-section{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.information .logo-name{
+    font-size: 26px;
+    font-weight: bold;
+    padding-top: 20px;
+    color: #fff;
+}
+.contact{
+    font-size: 15px;
+    padding-top: 20px;
+    color: rgb(168, 168, 168);
+}
+
+.contact a{
+    text-decoration: none;
+    color: rgb(168, 168, 168);
+}
+.frequent-questions{
+    font-size: 15px;
+    padding-top: 10px;
+    color: rgb(168, 168, 168);
+}
+
+.frequent-questions a{
+    text-decoration: none;
+    color: rgb(168, 168, 168);
+}
+
+.footer-title{
+    font-weight: bold;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.information-about-us{
+    font-size: 15px;
+    margin-top: 20px;
+    color: rgb(168, 168, 168);
+}
+
+.line-footer{
+    margin-top: 40px;
+    background-color: rgb(69, 69, 69);
+    width: 100%;
+    height: 1px;
+    opacity: .5;
+}
+
+.social-media svg{
+    color: #fff;
+    width: 40px;
+    font-size: 23px;
+    
+}
+.message-social-media{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(168, 168, 168);
+    font-size: 15px;
+}
+
+/*///////////////////////////////////// MOSTRAR PRODUCTO PAGINA ////////////////////////////////////////////*/
+
+.max-with-content{
+    margin-top: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.image-product img{
+    width: 500px;
+}
+
+.content-product{
+    margin: 20px;
+}
+
+.recomendation{
+    margin: 20px;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.image-product .product{
+    margin-left: 10px;
+    width: 240px;
+}
+
+.name-merch{
+    color: rgb(69, 69, 69);
+    font-size: 12px;
+}
+
+.product-name{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.old-price-product{
+    text-decoration: line-through;
+    font-size: 17px;
+    color: rgb(168, 168, 168);
+}
+.price-product{
+    font-size: 35px;
+    margin-bottom: -0px;
+}
+
+.available-models{
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.mobile-models{
+    margin-left: -20px;
+}
+.mobile-models a{
+    color: #000;
+}
+
+.available{
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    list-style: none;
+    border: solid rgb(48, 48, 48) 0.5px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.not-available{
+    cursor: default;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    list-style: none;
+    border: solid rgb(48, 48, 48) 0.5px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+.available:hover{
+    background-color: rgb(48, 48, 48);
+    color: #fff;
+}
+.mobile-models{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: repeat(2,200px);
+}
+
+.buy-button{
+    color: #fff;
+    background-color: #000;
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: solid #000 0.5px;
+    text-align: center;
+    width: 380px;
+}
+
+.buy-button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.available{
+    background-color: #fff;
+    color: #000;
+}
+
+.not-available{
+    opacity: 0.5;
+}
+
+.recomendation{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+@media screen and (max-width:1280px){
+    .products-section{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    
+    .products-section img{
+        cursor: pointer;
+        width: 240px;
+        transition: transform 0.1s;
+    }
+    /*Mostrar producto page*/
+    .img-active {
+        display: none;
+        box-shadow: 0 0 10px #494949, 0 0 10px #494949, 0 0 10px #494949;
+    }
+    
+}
+@media screen and (max-width:1100px){
+    /*Mostrar producto page*/
+    .image-product{
+        margin-top: -20px;
+        display: flex;
+        justify-content: center;
+    }
+    .image-product img{
+        margin-left: 10px;
+        width: 550px;
+    }
+    .card-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .information-product .name-merch{
+        margin-top: 20px;
+        text-align: center;
+    }
+    .information-product .product-name{
+        text-align: center;
+    }
+    .information-product .product-price{
+        text-align: center;
+    }
+    .information-product .product-models{
+        text-align: center;
+    }
+    .information-product .mobile-models{
+        margin: 20px;
+        grid-template-columns: repeat(2,200px);
+        place-content: center;
+    }
+    .buy-section{
+        display: flex;
+        justify-content: center;
+    }
+    .img-active {
+        display: none;
+        box-shadow: 0 0 10px #494949, 0 0 10px #494949, 0 0 10px #494949;
+    }
+}
+
+
+@media screen and (max-width:920px){
+    body{
+        background-color: #fff;
+    }
+    .header-navbar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .header-navbar img{
+        width: 150px;
+    }
+    
+    .nav-bar{
+        margin-left: -180px;
+        display: none;
+    }
+    
+    .products-section{
+        display: flex;
+        justify-content: space-around;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+    .products-section img{
+        cursor: pointer;
+        width: 370px;
+        transition: transform 0.1s;
+    }
+
+    .title-products-section{
+        font-size: 20px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    /*Mostrar producto page*/
+    .image-product{
+        margin-top: -20px;
+        display: flex;
+        justify-content: center;
+    }
+    .image-product img{
+        margin-left: 10px;
+        width: 500px;
+    }
+    .card-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .information-product .name-merch{
+        margin-top: 20px;
+        text-align: center;
+    }
+    .information-product .product-name{
+        text-align: center;
+    }
+    .information-product .product-price{
+        text-align: center;
+    }
+    .information-product .product-models{
+        text-align: center;
+    }
+    .information-product .mobile-models{
+        margin: 20px;
+        grid-template-columns: repeat(2,250px);
+        place-content: center;
+    }
+    .buy-section{
+        margin-top: -20px;
+        display: flex;
+        justify-content: center;
+    }
+    .img-active {
+        display: none;
+        box-shadow: 0 0 10px #494949, 0 0 10px #494949, 0 0 10px #494949;
+    }
+}
+
+@media screen and (max-width:500px){
+    body{
+        background-color: #fff;
+    }
+    .header-navbar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .header-navbar img{
+        width: 150px;
+    }
+    
+    .nav-bar{
+        margin-left: -180px;
+        display: none;
+    }
+
+    .products-section{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+    .products-section img{
+        cursor: pointer;
+        width: 180px;
+        transition: transform 0.1s;
+    }
+
+    .footer{
+        height: 350px;
+    }
+
+    .contact a{
+        font-size: 15px;
+    }
+    .contact a{
+        font-size: 15px;
+    }
+    .frequent-questions a{
+        font-size: 15px;
+    }
+    .about-us .footer-title{
+        font-size: 20px;
+    }
+    .about-us .information-about-us{
+        font-size: 15px;
+    }
+    .information .message-social-media{
+        font-size: 15px;
+    }
+    .information .social-media svg{
+        width: 50px;
+    }
+    /*Mostrar producto page*/
+    .image-product{
+        margin-top: -20px;
+        display: flex;
+        justify-content: center;
+    }
+    .image-product img{
+        margin-left: 10px;
+        width: 310px;
+    }
+    .card-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .information-product .name-merch{
+        margin-top: 20px;
+        text-align: center;
+    }
+    .information-product .product-name{
+        text-align: center;
+    }
+    .information-product .product-price{
+        text-align: center;
+    }
+    .information-product .product-models{
+        text-align: center;
+    }
+    .information-product .mobile-models{
+        margin: 20px;
+        grid-template-columns: repeat(2,150px);
+        place-content: center;
+    }
+    .buy-section{
+        margin-top: -20px;
+        display: flex;
+        justify-content: center;
+    }
+    .img-active {
+        display: none;
+        box-shadow: 0 0 10px #494949, 0 0 10px #494949, 0 0 10px #494949;
+    }
+}
+
+@media screen and (max-width:400px){
+    body{
+        background-color: #fff;
+    }
+    .products-section{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .products-section img{
+        cursor: pointer;
+        width: 160px;
+        transition: transform 0.1s;
+    }
+    .footer-title{
+        font-weight: bold;
+        margin-top: 20px;
+        color: #fff;
+    }
+    .information-about-us{
+        font-size: 22px;
+        margin-top: 20px;
+        color: rgb(168, 168, 168);
+    }
+    .line-footer{
+        margin-top: 40px;
+        background-color: rgb(69, 69, 69);
+        width: 100%;
+        height: 1px;
+        opacity: .5;
+    }
+    .social-media svg{
+        color: #fff;
+        width: 10px;
+    }
+    .message-social-media{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: rgb(168, 168, 168);
+        font-size: 12px;
+    }
+    .logo-name{
+        font-size: 10px;
+    }
+    .contact{
+        font-size: 10px;
+    }
+    .frequent-questions{
+        font-size: 10px;
+    }
+    .footer-title{
+        font-size: 10px;
+    }
+    .information-about-us{
+        font-size: 10px;
+    }
+    /*Mostrar producto page*/
+    .image-product .pictures{
+        margin-top: -20px;
+        display: flex;
+        justify-content: center;
+    }
+    .image-product img{
+        margin-left: 10px;
+        width: 250px;
+    }
+    .card-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .information-product .name-merch{
+        margin-top: 20px;
+        text-align: center;
+    }
+    .information-product .product-name{
+        text-align: center;
+    }
+    .information-product .product-price{
+        text-align: center;
+    }
+    .information-product .product-models{
+        text-align: center;
+    }
+    .information-product .mobile-models{
+        margin: 20px;
+        grid-template-columns: repeat(2,150px);
+        place-content: center;
+    }
+
+    .buy-section{
+        margin-top: -20px;
+        display: flex;
+        justify-content: center;
+    }
+    .img-active {
+        display: none;
+        box-shadow: 0 0 10px #494949, 0 0 10px #494949, 0 0 10px #494949;
+    }
+
+}
