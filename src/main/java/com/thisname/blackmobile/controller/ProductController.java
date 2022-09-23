@@ -36,7 +36,7 @@ public class ProductController {
     @PostMapping("/save") /**Ruta del metodo*/
     public void saveProduct(@RequestBody Product product){ /**Guardar un nuevo producto en base de datos*/
         service.save(product);
-        
+
     }
 
     @DeleteMapping("/delete/{id}") /**Ruta del metodo*/
